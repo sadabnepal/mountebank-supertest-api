@@ -31,7 +31,7 @@ mountebank: http://www.mbtest.org <br>
 supertest: http://visionmedia.github <br>
 mocha: https://ricostacruz.com/mocha/ <br>
 mocharc: https://github.com/mochajs/mocha/tree/master/example/config <br>
-chai: https://www.chaijs.com/
+chai: https://www.chaijs.com <br>
 report: https://github.com/adamgruber/mochawesome <br>
 eslint: https://eslint.org/docs/latest/use/getting-started <br>
 vscode settings: https://code.visualstudio.com/docs/getstarted/settings
@@ -43,6 +43,8 @@ vscode settings: https://code.visualstudio.com/docs/getstarted/settings
 - [x] setup test framework
 - [x] create simple test
 - [x] add different env stage test support
+- [x] add lint support for quality code
+- [ ] fix linting error in js files
 - [ ] add more stubs to replicate all https call
 - [ ] cover all test scenarios
 - [ ] create complex advance stubs
