@@ -1,0 +1,14 @@
+{
+    "extensions": [ "ts"],
+    "spec": ["tests/**/*.ts"],
+    "timeout": 10000,
+    "grep" : "",
+    "ignore": [""],
+    "recursive": true,
+    "package": "./package.json",
+    "parallel": false,
+    "reporter": [ "spec","mochawesome"],
+    "reporter-option": ["reportDir=report", "reportFilename=index"],
+    "require": ["tsconfig-paths/register", "ts-node/register"],
+    "retries": 0
+}

@@ -1,0 +1,8 @@
+{
+	"recommendations": [
+		"streetsidesoftware.code-spell-checker",
+		"spoonscen.es6-mocha-snippets",
+		"digitalbrainstem.javascript-ejs-support",
+		"dbaeumer.vscode-eslint"
+	]
+}

@@ -1,0 +1,39 @@
+{
+    "predicate": [
+        {
+            "equals": {
+                "method": "GET",
+                "path": "/api/users/1"
+            }
+        },
+        {
+            "equals": {
+                "method": "GET",
+                "path": "/api/users/2"
+            }
+        },
+        {
+            "equals": {
+                "method": "GET",
+                "path": "/api/users/3"
+            }
+        },
+        {
+            "equals": {
+                "method": "GET",
+                "path": "/api/users/4"
+            }
+        },
+        {
+            "equals": {
+                "method": "GET",
+                "path": "/api/users/5"
+            }
+        }
+    ],
+    "responses": [
+        {
+            "inject": "<%- stringify(filename, 'stubs/fetchUser.js') %>"
+        }
+    ]
+}

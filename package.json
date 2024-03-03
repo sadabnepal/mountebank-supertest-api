@@ -1,0 +1,38 @@
+{
+  "name": "mountebank-supertest-api",
+  "version": "1.0.0",
+  "description": "mountebank stub testing using supertest mocha and chai",
+  "main": "index.js",
+  "scripts": {
+    "start": "mb --configfile mocks/imposters.ejs --allowInjection --loglevel info",
+    "test": "mocha --config .mocharc.json",
+    "lint": "eslint . --ext .ts",
+    "lint-fix": "eslint --fix ."
+  },
+  "keywords": [
+    "mountebank",
+    "supertest",
+    "mocha",
+    "chai"
+  ],
+  "author": "Mohammad Sadab Saqib",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.3.12",
+    "@types/mocha": "^10.0.6",
+    "@types/mochawesome": "^6.2.4",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^7.1.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "chai": "^4.4.1",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.0",
+    "mocha": "^10.3.0",
+    "mochawesome": "^7.1.3",
+    "mountebank": "^2.9.1",
+    "supertest": "^6.3.4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.3.3"
+  }
+}

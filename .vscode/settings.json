@@ -1,0 +1,20 @@
+{
+    "cSpell.words": [
+        "configfile",
+        "linebreak",
+        "loglevel",
+        "mocharc"
+    ],
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[json]": {
+        "editor.formatOnSave": true
+    },
+    "workbench.colorCustomizations": {
+        "editorLineNumber.activeForeground": "#6fecd1"
+    }
+}
