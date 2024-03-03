@@ -22,9 +22,9 @@ npm run test
 
 ### stub details
 The project is using [Mountebank](http://www.mbtest.org) as a service virtualization tool, which provides following endpoints 
-#### /api/v1/addition
-`GET /api/v1/addition?a={number}&b={number}`
-Return the sum of a & b as response
+
+`GET: /api/users/userID` fetches the user information by `userID` <br>
+`GET: /api/users?page=id` fetches the users information by `page number`
 
 ### learning references:
 mountebank: http://www.mbtest.org <br>
@@ -35,3 +35,15 @@ chai: https://www.chaijs.com/
 report: https://github.com/adamgruber/mochawesome <br>
 eslint: https://eslint.org/docs/latest/use/getting-started <br>
 vscode settings: https://code.visualstudio.com/docs/getstarted/settings
+
+### TODO
+- [x] stub setup
+- [x] simple stub
+- [x] convert stub to dynamic
+- [x] setup test framework
+- [x] create simple test
+- [x] add different env stage test support
+- [ ] add more stubs to replicate all https call
+- [ ] cover all test scenarios
+- [ ] create complex advance stubs
+- [ ] document all endpoints in readme
