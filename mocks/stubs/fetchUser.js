@@ -3,7 +3,7 @@ function fetchUser(request) {
     const userId = requestPath.split('/').pop();
 
     const fs = require('fs');
-    const filePath = process.cwd() + `/mocks/response/${userId}.json`;
+    const filePath = process.cwd() + `/mocks/response/users/${userId}.json`;
 
     let data, responseCode;
 
