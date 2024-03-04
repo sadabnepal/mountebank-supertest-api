@@ -44,7 +44,8 @@ vscode settings: https://code.visualstudio.com/docs/getstarted/settings
 - [x] create simple test
 - [x] add different env stage test support
 - [x] add lint support for quality code
-- [ ] fix linting error in js files
+- [x] fix linting error in js files
+- [ ] fix default stub response error
 - [ ] add more stubs to replicate all https call
 - [ ] cover all test scenarios
 - [ ] create complex advance stubs

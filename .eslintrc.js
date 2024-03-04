@@ -50,5 +50,5 @@ module.exports = {
         project: 'tsconfig.json',
         sourceType: 'module',
     },
-    ignorePatterns: ['./mocks/**/*.js']
+    ignorePatterns: ['mocks/stubs/*.js']
 };

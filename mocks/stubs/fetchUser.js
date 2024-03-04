@@ -1,15 +1,23 @@
 function fetchUser(request) {
-
     const requestPath = request.path;
-    const userId = requestPath.split("/").pop();
+    const userId = requestPath.split('/').pop();
 
     const fs = require('fs');
-    const data = fs.readFileSync(process.cwd() + `/mocks/response/${userId}.json`, { encoding: "utf8" });
+    const filePath = process.cwd() + `/mocks/response/${userId}.json`;
+
+    let data, responseCode;
+
+    if (fs.existsSync(filePath)) {
+        data = fs.readFileSync(filePath, { encoding: 'utf8' });
+        responseCode = 200;
+    } else {
+        responseCode = 404;
+    }
 
     return {
-        statusCode: 200,
+        statusCode: responseCode,
         headers: {
-            "Content-Type": "application/json"
+            'Content-Type': 'application/json'
         },
         body: data
     };
