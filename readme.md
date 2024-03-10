@@ -15,16 +15,23 @@ cd mountebank-supertest-api
 npm start
 ```
 
+### set env
+```
+export ENV=local [make sure to start stub]
+         OR
+export ENV=dev
+```
+
 ### run test
 ```
 npm run test
 ```
 
 ### stub details
-The project is using [Mountebank](http://www.mbtest.org) as a service virtualization tool, which provides following endpoints 
+The project is using [mountebank](http://www.mbtest.org) as a service virtualization tool, which provides following endpoints 
 
-`GET: /api/users/userID` fetches the user information by `userID` <br>
-`GET: /api/users?page=id` fetches the users information by `page number`
+`GET: /api/users/<id>` fetches the user information by `user id` <br>
+`GET: /api/users?page=<number>` fetches the users information by `page number`
 
 ### learning references:
 mountebank: http://www.mbtest.org <br>
@@ -45,7 +52,7 @@ vscode settings: https://code.visualstudio.com/docs/getstarted/settings
 - [x] add different env stage test support
 - [x] add lint support for quality code
 - [x] fix linting error in js files
-- [ ] fix default stub response error
+- [x] fix default stub response error
 - [ ] add more stubs to replicate all https call
 - [ ] cover all test scenarios
 - [ ] create complex advance stubs

@@ -26,7 +26,7 @@ module.exports = {
             }
         ],
         '@typescript-eslint/no-unused-vars': [
-            'warn',
+            'error',
             {
                 'args': 'all',
                 'argsIgnorePattern': '.js',
@@ -50,5 +50,5 @@ module.exports = {
         project: 'tsconfig.json',
         sourceType: 'module',
     },
-    ignorePatterns: ['mocks/stubs/*.js']
+    ignorePatterns: ['mocks/**/*.js', 'report/**/*']
 };
