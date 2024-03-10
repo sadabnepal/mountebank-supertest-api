@@ -6,7 +6,7 @@
   "scripts": {
     "start": "mb --configfile mocks/imposters.ejs --allowInjection --loglevel info",
     "test": "mocha --config .mocharc.json",
-    "lint": "eslint . --ext .ts",
+    "pretest": "eslint . --ext .ts",
     "lint-fix": "eslint --fix ."
   },
   "keywords": [

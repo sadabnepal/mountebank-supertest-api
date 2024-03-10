@@ -4,7 +4,7 @@
         "email": "eve.holt@reqres.in",
         "first_name": "Eve",
         "last_name": "Holt",
-        "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        "avatar": "http://localhost:4545/img/faces/4-image.jpg"
     },
     "support": {
         "url": "https://reqres.in/#support-heading",

@@ -12,13 +12,7 @@
     ],
     "responses": [
         {
-            "is": {
-                "statusCode": 200,
-                "headers": {
-                    "Content-Type": "application/json"
-                },
-                "body": "<%- stringify(filename, "response/pages/1.json") %>"
-            }
+            "inject": "<%- stringify(filename, 'helper/fetchPage.js') %>"
         }
     ]
 },
@@ -36,13 +30,7 @@
     ],
     "responses": [
         {
-            "is": {
-                "statusCode": 200,
-                "headers": {
-                    "Content-Type": "application/json"
-                },
-                "body": "<%- stringify(filename, "response/pages/2.json") %>"
-            }
+            "inject": "<%- stringify(filename, 'helper/fetchPage.js') %>"
         }
     ]
 }
