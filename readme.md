@@ -30,8 +30,27 @@ npm run test
 ### stub details
 The project is using [mountebank](http://www.mbtest.org) as a service virtualization tool, which provides following endpoints 
 
-`GET: /api/users/<id>` fetches the user information by `user id` <br>
-`GET: /api/users?page=<number>` fetches the users information by `page number`
+`GET: /api/users/<id>` fetches the user information by `user id` with response code: `200` <br>
+`GET: /api/users?page=<number>` fetches the users information by `page number` with response code: `200` <br>
+`POST: /api/users` creates the record with body information passed with response code: `201`<br>
+Sample payload:
+```
+{
+    "name": "sadab",
+    "job": "tester"
+}
+```
+
+`PUT: /api/users/<id>` updates the users information by `user id` with response code: `200` <br>
+Sample payload:
+```
+{
+    "name": "saqib",
+    "job": "lead tester"
+}
+```
+
+default response for all other endpoints will be empty object `{}` with response code: `404`
 
 ### learning references:
 mountebank: http://www.mbtest.org <br>
@@ -55,5 +74,5 @@ vscode settings: https://code.visualstudio.com/docs/getstarted/settings
 - [x] fix default stub response error
 - [ ] add more stubs to replicate all https call
 - [ ] cover all test scenarios
-- [ ] create complex advance stubs
+- [ ] create complex advance stubs (register and login)
 - [ ] document all endpoints in readme

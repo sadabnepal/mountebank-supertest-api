@@ -6,12 +6,14 @@
             "name": "users stub",
             "recordRequest": false,
             "defaultResponse": {
-                "statusCode": 400,
-                "body": "bad request"
+                "statusCode": 404,
+                "body": {}
             },
             "stubs": [
                 <% include stubs/singleUser.ejs %>,
-                <% include stubs/singlePage.ejs %>
+                <% include stubs/singlePage.ejs %>,
+                <% include stubs/createUser.ejs %>,
+                <% include stubs/updateUser.ejs %>
             ]
         }
     ]

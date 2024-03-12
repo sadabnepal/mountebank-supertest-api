@@ -1,0 +1,24 @@
+{
+    "predicates": [
+        {
+            "and": [
+                {
+                    "matches": {
+                        "method": "PUT",
+                        "path": "/api/users/[0-9]"
+                    }
+                },
+                {
+                    "exists": {
+                        "body": true
+                    }
+                }
+            ]
+        }
+    ],
+    "responses": [
+        {
+            "inject": "<%- stringify(filename, 'helper/updateUser.js') %>"
+        }
+    ]
+}
