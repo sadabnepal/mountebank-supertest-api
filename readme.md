@@ -29,28 +29,15 @@ npm run test
 
 ### stub details
 The project is using [mountebank](http://www.mbtest.org) as a service virtualization tool, which provides following endpoints 
+| http call   | endpoint                   | status code | payload   |
+|-------------|----------------------------|-------------|-----------|
+| GET         | `/api/users/<id>`          | 200         | N/A       |
+| GET         | `/api/users?page=<number>` | 200         | N/A       |
+| POST        | `/api/users`               | 201         | `{"name": "sadab", "job": "tester" }` |
+| PUT         | `/api/users/<id>`          | 200         | `{"name": "saqib", "job": "admin" }` |
 
-`GET: /api/users/<id>` fetches the user information by `user id` with response code: `200` <br>
-`GET: /api/users?page=<number>` fetches the users information by `page number` with response code: `200` <br>
-`POST: /api/users` creates the record with body information passed with response code: `201`<br>
-Sample payload:
-```
-{
-    "name": "sadab",
-    "job": "tester"
-}
-```
+Note: default response will be empty object `{}` with response code: `404`
 
-`PUT: /api/users/<id>` updates the users information by `user id` with response code: `200` <br>
-Sample payload:
-```
-{
-    "name": "saqib",
-    "job": "lead tester"
-}
-```
-
-default response for all other endpoints will be empty object `{}` with response code: `404`
 
 ### learning references:
 mountebank: http://www.mbtest.org <br>
