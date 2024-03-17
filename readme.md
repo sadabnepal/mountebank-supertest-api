@@ -11,16 +11,27 @@ cd mountebank-supertest-api
 [![NodeJs](https://img.shields.io/badge/-NodeJS-%23339933?logo=npm)](https://nodejs.org/en/download/)
 [![VSCode](https://img.shields.io/badge/-Visual%20Studio%20Code-%233178C6?logo=visual-studio-code)](https://code.visualstudio.com/download)
 
-### start stub
+### install packages
+```
+npm install
+```
+
+### start stub [ for ENV=local]
 ```
 npm start
 ```
 
 ### set env
 ```
-export ENV=local [make sure to start stub]
+export ENV=local
          OR
 export ENV=dev
+```
+
+### base url
+```
+local: http://localhost:4545/api 
+dev: https://reqres.in/api
 ```
 
 ### run test
@@ -30,14 +41,14 @@ npm run test
 
 ### stub details
 The project is using [mountebank](http://www.mbtest.org) as a service virtualization tool, which provides following endpoints 
-| http call   | endpoint                   | status code | payload   |
-|-------------|----------------------------|-------------|-----------|
-| GET         | `/api/users/<id>`          | 200         | N/A       |
-| GET         | `/api/users?page=<number>` | 200         | N/A       |
-| POST        | `/api/users`               | 201         | `{"name": "sadab", "job": "tester" }` |
-| PUT         | `/api/users/<id>`          | 200         | `{"name": "saqib", "job": "admin" }` |
-| POST        | `/register`                | 200         | `{"email": "test@test.com", "password": "test@123" }` |
-| POST        | `/login`                   | 200         | `{"email": "test@test.com", "password": "test@123" }` |
+| http call   | endpoint               | status code | payload   |
+|-------------|------------------------|-------------|-----------|
+| GET         | `/users/<id>`          | 200         | N/A       |
+| GET         | `/users?page=<number>` | 200         | N/A       |
+| POST        | `/users`               | 201         | `{"name": "sadab", "job": "tester" }` |
+| PUT         | `/users/<id>`          | 200         | `{"name": "saqib", "job": "admin" }` |
+| POST        | `/register`            | 200         | `{"email": "test@test.com", "password": "test@123" }` |
+| POST        | `/login`               | 200         | `{"email": "test@test.com", "password": "test@123" }` |
 
 Note: default response will be empty object `{}` with response code: `404`
 
