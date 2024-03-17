@@ -1,4 +1,5 @@
 # Mountebank Supertest mocha stub and test framework
+boilerplate project to showcase virtualization of rest services using mountebank and testing rest api using supertest nodejs library with mocha framework
 
 ### getting started
 ```
@@ -35,6 +36,8 @@ The project is using [mountebank](http://www.mbtest.org) as a service virtualiza
 | GET         | `/api/users?page=<number>` | 200         | N/A       |
 | POST        | `/api/users`               | 201         | `{"name": "sadab", "job": "tester" }` |
 | PUT         | `/api/users/<id>`          | 200         | `{"name": "saqib", "job": "admin" }` |
+| POST        | `/register`                | 200         | `{"email": "test@test.com", "password": "test@123" }` |
+| POST        | `/login`                   | 200         | `{"email": "test@test.com", "password": "test@123" }` |
 
 Note: default response will be empty object `{}` with response code: `404`
 
@@ -59,7 +62,7 @@ vscode settings: https://code.visualstudio.com/docs/getstarted/settings
 - [x] add lint support for quality code
 - [x] fix linting error in js files
 - [x] fix default stub response error
-- [ ] add more stubs to replicate all https call
-- [ ] cover all test scenarios
-- [ ] create complex advance stubs (register and login)
-- [ ] document all endpoints in readme
+- [x] add more stubs to replicate all https call
+- [x] cover all test scenarios
+- [x] create complex advance stubs (register and login)
+- [x] document all endpoints in readme
